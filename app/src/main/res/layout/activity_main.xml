@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo Section -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/hunarmand_logo"
+            android:contentDescription="App Logo"
+            android:layout_marginTop="80dp" />
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Search Better Jobs for a Better Future"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <!-- Search Jobs Frame -->
+        <FrameLayout
+            android:id="@+id/searchViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/search_frame_background"
+            android:elevation="4dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+            <!-- Search Icon -->
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start|center_vertical"
+                android:src="@drawable/search_icon"
+                android:contentDescription="Search Icon" />
+
+            <!-- Search Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Jobs"
+                android:textSize="18sp"
+                android:textColor="#888888"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginStart="40dp"
+                android:layout_marginLeft="40dp" />
+        </FrameLayout>
+
+        <!-- Button Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:paddingHorizontal="10dp">
+
+            <!-- Experts Button -->
+            <Button
+                android:id="@+id/expertbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_button_green"
+                android:text="Experts"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingVertical="12dp" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_button_green"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:paddingVertical="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardview"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/iv_profile_image"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/profile_image"
+                            app:civ_border_width="1dp"
+                            app:civ_border_color="#FF000000"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1.8"
+                        android:orientation="vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="20dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_name_expertsItem"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:gravity="center"
+
+                            android:textStyle="bold"
+                            android:text="Name of expert">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="200dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:text="Skills : "/>
+                            <TextView
+                                android:id="@+id/tvSkillsExpertsItem"
+                                android:layout_width="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Location"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.3"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="end"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_expand_icon"
+                            android:layout_width="25dp"
+                            android:src="@drawable/down_arrow"
+                            android:layout_height="fill_parent">
+                        </ImageView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/expandableLayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Address :"/>
+                        <TextView
+                            android:id="@+id/tv_address_expertsItem"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="wrap_content"
+                            android:text="Designer"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_height="fill_parent">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Gender :"/>
+                        <TextView
+                            android:id="@+id/tv_gender"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="wrap_content"
+                            android:text="Male"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Education : "/>
+                        <TextView
+                            android:id="@+id/tv_education"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="wrap_content"
+                            android:text="Matric"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Experience : "/>
+                        <TextView
+                            android:id="@+id/tv_experience"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="wrap_content"
+                            android:text="One Year"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:weightSum="3"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_weight="1.3"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"
+                            android:text="Description : "/>
+                        <TextView
+                            android:id="@+id/tv_description"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:layout_width="0dp"
+                            android:layout_weight="1.7"
+                            android:layout_height="wrap_content"
+                            android:text="Logo Designer"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:padding="7dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="40dp"
+                    android:weightSum="3"
+                    android:background="@drawable/item_job_footer"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_call_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/call">
+                    </ImageView>
+
+                    <ImageView
+                        android:id="@+id/iv_message_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/message">
+                    </ImageView>
+
+
+                    <ImageView
+                        android:id="@+id/iv_whattsapp_icon"
+                        android:layout_width="0dp"
+                        android:layout_height="25dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/whatsapp">
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

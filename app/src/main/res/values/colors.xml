@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Kelly_Green">#4CBB17</color>
+    <color name="Army_Green">#454B1B</color>
+    <color name="Olive_Green">#808000</color>
+    <color name="blue">#1A9DF1</color>
+    <color name="Lime_Green">#32CD32</color>
+    <color name="blu_logo">#072A6C</color>
+    <color name="blu_logo2">#041B43</color>
+    <color name="lghit_black">#1D1D1D</color>
+    <color name="indicator_color">#FF5733</color> <!-- Example indicator color -->
+
+
+</resources>

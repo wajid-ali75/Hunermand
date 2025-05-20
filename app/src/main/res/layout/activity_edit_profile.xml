@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:padding="20dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update your profile"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"/>
+
+            <!-- Form Fields -->
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update Name"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update Email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/contactnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update Contact Number"
+                android:inputType="phone"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:inputType="text"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update Address"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/tv_skillUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_background"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp"
+                android:layout_gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update skills if needed"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:padding="10dp" />
+                <ImageView
+                    android:id="@+id/iv_rotateIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/down_arrow"
+                    android:padding="10dp"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/skills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Skills"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Experience"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/certificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Certificate"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginBottom="10dp"
+                android:padding="10dp"
+                android:visibility="gone" />
+
+            <!-- Next Button -->
+            <Button
+                android:id="@+id/btn_saveChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/button_background" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_log_out"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/baseline_logout"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Log out"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

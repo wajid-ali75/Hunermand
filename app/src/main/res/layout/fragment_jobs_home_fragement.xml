@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JobsHomeFragement">
+
+
+    <!-- Full-Width Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#072A6C"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <!-- Back Button on the left -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:tint="@android:color/white"
+            android:padding="8dp"
+            android:layout_gravity="start"/>
+
+        <!-- Title centered in the Toolbar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="HUNERMAND"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- ViewPager2 for Image Slider -->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/imageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <!-- TabLayout for Indicator positioned over the ViewPager2 -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/transparent"
+                app:tabIndicatorFullWidth="false"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@color/Kelly_Green"
+                app:tabSelectedTextColor="@android:color/transparent"
+                app:tabTextColor="@android:color/transparent"
+                app:tabRippleColor="@android:color/transparent" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@color/white">
+
+        <!-- 1) This linear lyout for whol image and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- For image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/electricianImag"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/electrician_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/driverImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/driver_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cookImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/cook_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+            </LinearLayout>
+
+            <!-- For text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Electrician"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Driver"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cook"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 2) This linear lyout for whol image and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- For image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/plumberImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/plumber_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/salesmanImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/salesman_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/officeBoyImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/officeboy_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+            </LinearLayout>
+
+            <!-- For text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Plumber"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Salesman"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Office Boy"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 3) This linear lyout for whol image and text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- For image -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/painterImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/painter"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tailorImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/tailor_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/carpenterImage"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/corpenter_icon"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="#FF000000"/>
+
+            </LinearLayout>
+
+            <!-- For text -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Painter"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Tailor"
+                    android:layout_marginTop="5dp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Carpenter"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/expertSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rectangle_background"
+            android:layout_marginStart="25sp"
+            android:layout_marginEnd="25sp"
+            android:layout_marginBottom="5sp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5sp"
+                android:src="@drawable/search_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Searh Jobs"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

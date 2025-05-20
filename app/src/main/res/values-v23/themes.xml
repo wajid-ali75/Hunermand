@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.HunermandAndriodApp" parent="Base.Theme.HunermandAndriodApp">
+        <!-- Transparent system bars for edge-to-edge. -->
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:statusBarColor">@color/blu_logo</item>
+
+        <!-- Set this to false for white icons/text -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

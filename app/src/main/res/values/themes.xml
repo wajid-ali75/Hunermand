@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HunermandAndriodApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/Kelly_Green</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+
+    </style>
+
+    <style name="Theme.HunermandAndriodApp" parent="Base.Theme.HunermandAndriodApp" />
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "662718674803",
+    "project_id": "hunermand-andriod-app",
+    "storage_bucket": "hunermand-andriod-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:662718674803:android:0303057235e94271e3f706",
+        "android_client_info": {
+          "package_name": "com.collage.hunermandandriodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_clyBMuPDJr0T-cj5fpntFngXUw4jS-E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

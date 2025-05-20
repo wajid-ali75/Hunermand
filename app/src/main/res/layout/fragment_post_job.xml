@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="24dp"
+    tools:context=".PostJobFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- Card Container for Form -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:padding="24dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post a Job"
+                android:textSize="22sp"
+                android:textColor="#333333"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:paddingBottom="12dp" />
+
+            <!-- Job Title Field (Full Width) -->
+            <AutoCompleteTextView
+                android:id="@+id/ed_jobtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Job Title"
+                android:background="@drawable/rectangle_background"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:completionThreshold="1"/>
+
+            <!-- Two-Column Layouts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/ed_jobtype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Job Type"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:completionThreshold="1"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:clickable="true"
+                    android:inputType="none"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/ed_experience"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Experience"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/ed_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Gender"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:completionThreshold="1"
+                    android:drawableEnd="@drawable/down_arrow"
+                    android:inputType="none"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/ed_location"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Location"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/ed_sallry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Salary"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <EditText
+                    android:id="@+id/ed_education"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Education"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="12dp" />
+
+                <EditText
+                    android:id="@+id/ed_contactPersonName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Contact Person Name"
+                    android:background="@drawable/rectangle_background"
+                    android:padding="16dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- Phone Number and Description (Full Width) -->
+            <EditText
+                android:id="@+id/ed_Phon_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone No"
+                android:background="@drawable/rectangle_background"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/ed_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="start|top"
+                android:hint="Description"
+                android:background="@drawable/rectangle_background"
+                android:padding="16dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textMultiLine"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/btn_postjob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post"
+            android:textSize="20sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_background"
+            android:padding="14dp"
+            android:layout_marginBottom="16dp" />
+
+
+    </LinearLayout>
+</ScrollView>

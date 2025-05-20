@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExpertsPragment">
+
+    <!-- Full-Width Top Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#072A6C"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_back"
+                android:tint="@android:color/white"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Experts"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="8dp"
+            android:textStyle="bold"/>
+
+        <!-- Post Job Button aligned to the right -->
+        <Button
+            android:id="@+id/btn_postjob"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/rounded_button_green"
+            android:text="Post Job"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="5dp"
+            android:layout_gravity="end"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Search Bar below Toolbar -->
+    <SearchView
+        android:id="@+id/expert_searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/search_frame_background"
+        android:iconifiedByDefault="false"
+        android:padding="8dp"
+        android:queryHint="Search Expert"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- RecyclerView for displaying expert list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expertRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_experts"/>
+
+</LinearLayout>

@@ -40,12 +40,7 @@ The app aims to bridge the gap in local job markets by providing a simple platfo
  Design Tools         (Adobe Illustrator)         
  Platform             (Android)                  
  IDE                  (Android Studio)           
-
----
-### 📄 Research Paper
-Our Android app project is published as a technical paper on Zenodo.  
-🔗 [Read the full paper here](https://zenodo.org/records/15752116))
-
+ 
 ---
 ## 📄 Thesis Publication
 
@@ -54,8 +49,17 @@ Our Android app project is published as a technical paper on Zenodo.
 🏫 **Institute**: Department of Computer Science, Govt. College Daggar, University of Buner  
 📅 **Published**: 2025 on Zenodo  
 🔗 **DOI**: [10.5281/zenodo.15753928](https://doi.org/10.5281/zenodo.15753928)
-
 📥 [Download Thesis (PDF)](https://doi.org/10.5281/zenodo.15753928)
+
+---
+
+## 📄 Research Paper
+
+Our Android app project is published as a technical research paper on Zenodo.
+
+🔗 [Read the Full Paper Here](https://doi.org/10.5281/zenodo.15752115)  
+📖 **DOI**: [10.5281/zenodo.15752115](https://doi.org/10.5281/zenodo.15752115)
+
 
 
 

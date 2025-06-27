@@ -46,5 +46,17 @@ The app aims to bridge the gap in local job markets by providing a simple platfo
 Our Android app project is published as a technical paper on Zenodo.  
 🔗 [Read the full paper here](https://zenodo.org/records/15752116))
 
+---
+## 📄 Thesis Publication
+
+🎓 **Title**: *Hunermand: A Localized Android Platform Connecting Skilled Experts with Job Seekers*  
+👨‍💻 **Authors**: Wajid Ali, Bilal Ahmed  
+🏫 **Institute**: Department of Computer Science, Govt. College Daggar, University of Buner  
+📅 **Published**: 2025 on Zenodo  
+🔗 **DOI**: [10.5281/zenodo.15753928](https://doi.org/10.5281/zenodo.15753928)
+
+📥 [Download Thesis (PDF)](https://doi.org/10.5281/zenodo.15753928)
+
+
 
 

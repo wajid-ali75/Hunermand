@@ -42,5 +42,9 @@ The app aims to bridge the gap in local job markets by providing a simple platfo
  IDE                  (Android Studio)           
 
 ---
+### 📄 Research Paper
+Our Android app project is published as a technical paper on Zenodo.  
+🔗 [Read the full paper here](https://zenodo.org/records/15752116))
+
 
 

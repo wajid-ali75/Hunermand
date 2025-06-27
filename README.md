@@ -49,6 +49,7 @@ The app aims to bridge the gap in local job markets by providing a simple platfo
 🏫 **Institute**: Department of Computer Science, Govt. College Daggar, University of Buner  
 📅 **Published**: 2025 on Zenodo  
 🔗 **DOI**: [10.5281/zenodo.15753928](https://doi.org/10.5281/zenodo.15753928)
+
 📥 [Download Thesis (PDF)](https://doi.org/10.5281/zenodo.15753928)
 
 ---
